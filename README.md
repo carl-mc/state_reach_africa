@@ -28,7 +28,7 @@ Conflict in Africa. *Journal of Conflict Resolution, 65*(2-3),
 
 ## Data
 
-### 1st Level Administrative Units (aka Regions)
+### 1st Level Administrative Units (a.k.a. Regions)
 
 GIS data for 1st level administrative units of independent African
 countries is stored under
@@ -53,7 +53,7 @@ but computed with time-invariant road networks as observed in 1966 are
 stored here: data/admin\_units/time2regcap\_1945\_2016\_1966roads.tif
 and data/admin\_units/time2natcap\_1945\_2016\_dynroads.tif.
 
-![](README_files/figure-markdown_strict/statereach-1.png)![](README_files/figure-markdown_strict/statereach-2.png)
+<img src="README_files/figure-markdown_strict/statereach-1.png" width="50%" /><img src="README_files/figure-markdown_strict/statereach-2.png" width="50%" />
 
 ### Market Access Measures
 
@@ -79,7 +79,7 @@ discounted by a trade elasticity *θ*. Because Donaldson (2018) and Eaton
 and 3.2 respectively), I construct the market access measure for both
 parameters.
 
-![](README_files/figure-markdown_strict/market-1.png)![](README_files/figure-markdown_strict/market-2.png)
+<img src="README_files/figure-markdown_strict/market-1.png" width="50%" /><img src="README_files/figure-markdown_strict/market-2.png" width="50%" />
 
 ## References
 

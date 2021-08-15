@@ -30,7 +30,7 @@ Please refer to the following two publications for details:
 
 ## Data
 
-### 1st Level Administrative Units (aka Regions)
+### 1st Level Administrative Units (a.k.a. Regions)
 
 GIS data for 1st level administrative units of independent African countries is stored under data/admin_units/africa_regions_panel.GeoJSON . 
 
@@ -56,14 +56,14 @@ points(admin.shp@data[admin.shp$startyr <= year & admin.shp$endyr >= year,c("cap
 
 Because physical accessibility is a necessary (but not sufficient) condition for state capacity, this data proxies local state reach via the travel times to a locations' national and regional capitals. Using time-varying data on roads, administrative borders, and capitals, these are computed yearly, for every ell on a 5 x 5km raster for all years between 1945 and 2016. Note that all years before 1966 use the road network as observed in 1966 for computing travel times. Travel times based on time-varying road data are stored under data/admin_units/time2regcap_1945_2016_dynroads.tif and data/admin_units/time2natcap_1945_2016_dynroads.tif for times to regional and national capitals, respectively. Data of the same format but computed with time-invariant road networks as observed in 1966 are stored here: data/admin_units/time2regcap_1945_2016_1966roads.tif and data/admin_units/time2natcap_1945_2016_dynroads.tif.
 
-```{r statereach, echo=FALSE, results = FALSE, message=FALSE, warning=FALSE}
+```{r statereach, echo=FALSE, results = FALSE, message=FALSE, warning=FALSE, out.width="50%"}
 ## Load data
 regcap <- stack("data/state_reach/time2regcap_1945_2016_dynroads.tif")
 natcap <- stack("data/state_reach/time2natcap_1945_2016_dynroads.tif")
 
 ## Plot for year 2000
 year <- 2000
-par(mar = c(4, 4, .1, .1))
+par(mar = c(4, 4, 1, 1))
 plot(regcap[[paste0("time2regcap_1945_2016_dynroads.", year-1945+1)]],
      main = "Time to regional capitals, 2000 (hrs)")
 plot(natcap[[paste0("time2natcap_1945_2016_dynroads.", year-1945+1)]],
@@ -80,7 +80,7 @@ $MA_{p,t} = \sum_{m = 1}^{M} c_{p,m,t}^{-\theta} * P_{m,t}, $
 
 where the market access of point $p$ in year $t$ is the sum of the market potential $P$ of a market $m$ in year $t$ multiplied by the travel time between $p$ and $m$ calculated on the road network and discounted by a trade elasticity $\theta$. Because  Donaldson (2018) and Eaton & Kortum (2002) estimate different trade elasticity measures ($\theta = $ 8.28 and 3.2 respectively), I construct the market access measure for both parameters. 
 
-```{r market, echo=FALSE, results = FALSE, message=FALSE, warning=FALSE}
+```{r market, echo=FALSE, results = FALSE, message=FALSE, warning=FALSE, out.width="50%"}
 ## Load data
 ma.nat <- stack("data/market_access/ma_nat_donal_1940_2017_dynroads.tif")
 ma.int <- stack("data/market_access/ma_int_donal_1940_2017_dynroads.tif")
