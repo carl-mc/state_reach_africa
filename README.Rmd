@@ -76,7 +76,7 @@ plot(natcap[[paste0("time2natcap_1945_2016_dynroads.", year-1945+1)]],
 
 Because these proxies for state reach correlate with (but are not the same as) access to economic markets, gridded access measure to national and Africa-wide markets are included under data/market_access for all years since 1940. These data are computed using time-variant road networks (again, using those from 1966 for all years prior) and data from Africapolis on the location and polulation of the 1530 biggest cities and towns in Africa. These are all cities that ever reached more then 50'000 inhabitants since 1950. Market access is computed using all cities in the same country as a grid cell (national market access) or all cities on the continent (international market access) using the following formula from the economic literature:
 
-$MA_{p,t} = \sum_{m = 1}^{M} c_{p,m,t}^{-\theta} * P_{m,t}, $
+$MA_{p,t}=\sum_{m=1}^{M}c_{p,m,t}^{-\theta}*P_{m,t},$
 
 where the market access of point $p$ in year $t$ is the sum of the market potential $P$ of a market $m$ in year $t$ multiplied by the travel time between $p$ and $m$ calculated on the road network and discounted by a trade elasticity $\theta$. Because  Donaldson (2018) and Eaton & Kortum (2002) estimate different trade elasticity measures ($\theta = $ 8.28 and 3.2 respectively), I construct the market access measure for both parameters. 
 

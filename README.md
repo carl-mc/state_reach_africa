@@ -69,7 +69,7 @@ cities in the same country as a grid cell (national market access) or
 all cities on the continent (international market access) using the
 following formula from the economic literature:
 
-$MA\_{p,t} = *{m = 1}^{M} c*{p,m,t}^{-} \* P\_{m,t}, $
+$MA\_{p,t}=\\sum\_{m=1}^{M}c\_{p,m,t}^{-\\theta}\*P\_{m,t},$
 
 where the market access of point *p* in year *t* is the sum of the
 market potential *P* of a market *m* in year *t* multiplied by the
