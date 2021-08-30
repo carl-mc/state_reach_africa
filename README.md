@@ -1,3 +1,7 @@
+**Attention:** This is only a Beta version. Please email any feedback to
+[carl.muller-crepon at
+politics.ox.ac.uk](mailto:carl.muller-crepon@politics.ox.ac.uk).
+
 ## Description
 
 Prominent arguments hold that African states’ geography limits state
@@ -12,7 +16,13 @@ points in time since 1966. Data on administrative units, their capitals,
 and borders has been self-collected, drawing on public sources such as
 statoids.org, FAO’s GAUL database, and the GADM data.
 
-Please refer to the following two publications for details:
+The data is also available for download from this Dropbox:
+<https://www.dropbox.com/sh/xsxhow5aslr5tnv/AADeSxh_9NC8cvlw-zKtXvh9a?dl=0>
+
+See README.Rmd for details on how to load the data (in R).
+
+When using the data, please cite the following publications and refer to
+them for further details:
 
 [Müller-Crepon, Carl. (2021) State Reach and Development in Africa since
 the 1960s: New Data and Analysis. *Political Science Research and
@@ -31,8 +41,10 @@ Conflict in Africa. *Journal of Conflict Resolution, 65*(2-3),
 ### 1st Level Administrative Units (a.k.a. Regions)
 
 GIS data for 1st level administrative units of independent African
-countries is stored under
-data/admin\_units/africa\_regions\_panel.GeoJSON .
+countries until 2016 are stored under
+data/admin\_units/africa\_regions\_panel.GeoJSON . Each geometry
+corresponds to one administrative unit which existed for a period
+indicated by the start and end years.
 
 ![](README_files/figure-markdown_strict/adminunits-1.png)
 
@@ -44,14 +56,17 @@ the travel times to a locations’ national and regional capitals. Using
 time-varying data on roads, administrative borders, and capitals, these
 are computed yearly, for every ell on a 5 x 5km raster for all years
 between 1945 and 2016. Note that all years before 1966 use the road
-network as observed in 1966 for computing travel times. Travel times
-based on time-varying road data are stored under
+network as observed in 1966 for computing travel times.
+
+Travel times based on time-varying road data are stored under
 data/admin\_units/time2regcap\_1945\_2016\_dynroads.tif and
 data/admin\_units/time2natcap\_1945\_2016\_dynroads.tif for times to
 regional and national capitals, respectively. Data of the same format
 but computed with time-invariant road networks as observed in 1966 are
 stored here: data/admin\_units/time2regcap\_1945\_2016\_1966roads.tif
-and data/admin\_units/time2natcap\_1945\_2016\_dynroads.tif.
+and data/admin\_units/time2natcap\_1945\_2016\_dynroads.tif. These are
+multi-band .tif files where each band corresponds to one year, in
+chronological order since 1945.
 
 <img src="README_files/figure-markdown_strict/statereach-1.png" width="50%" /><img src="README_files/figure-markdown_strict/statereach-2.png" width="50%" />
 
@@ -62,7 +77,7 @@ same as) access to economic markets, gridded access measure to national
 and Africa-wide markets are included under data/market\_access for all
 years since 1940. These data are computed using time-variant road
 networks (again, using those from 1966 for all years prior) and data
-from Africapolis on the location and polulation of the 1530 biggest
+from Africapolis on the location and population of the 1530 biggest
 cities and towns in Africa. These are all cities that ever reached more
 then 50’000 inhabitants since 1950. Market access is computed using all
 cities in the same country as a grid cell (national market access) or
@@ -78,6 +93,10 @@ discounted by a trade elasticity *θ*. Because Donaldson (2018) and Eaton
 & Kortum (2002) estimate different trade elasticity measures ($= $ 8.28
 and 3.2 respectively), I construct the market access measure for both
 parameters.
+
+The data come as multi-band .tif files where each band corresponds to
+one year, in chronological order since 1940. Again, I use the 1966 road
+data for all years before that year.
 
 <img src="README_files/figure-markdown_strict/market-1.png" width="50%" /><img src="README_files/figure-markdown_strict/market-2.png" width="50%" />
 
