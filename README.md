@@ -1,6 +1,3 @@
-**Attention:** This is only a Beta version. Please email any feedback to
-[carl.muller-crepon at
-politics.ox.ac.uk](mailto:carl.muller-crepon@politics.ox.ac.uk).
 
 ## Description
 
@@ -108,3 +105,7 @@ Transportation Infrastructure.” American Economic Review
 
 Eaton, Jonathan and Samuel Kortum. 2002. “Technology, Gravity, and
 Trade.” Econometrica 70(5):1741–1779.
+
+**Feedback and Questions:** Please email [carl.muller-crepon at
+politics.ox.ac.uk](mailto:carl.muller-crepon@politics.ox.ac.uk).
+
