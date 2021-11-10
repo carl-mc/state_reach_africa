@@ -23,9 +23,8 @@ them for further details:
 
 [Müller-Crepon, Carl. (2021) State Reach and Development in Africa since
 the 1960s: New Data and Analysis. *Political Science Research and
-Methods:* Conditionally accepted for
-publication.](http://www.carlmueller-crepon.org/publication/state_reach_development/)
-(presents the main data)
+Methods:* FirstView.](https://www.doi.org/10.1017/psrm.2021.60) 
+(presents the main data) [Working Paper version](http://www.carlmueller-crepon.org/publication/state_reach_development/)
 
 [Müller-Crepon, Carl, Philipp Hunziker & Lars-Erik Cederman (2021).
 Roads to Rule, Roads to Rebellion: Relational State Capacity and
