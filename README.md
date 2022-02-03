@@ -13,7 +13,7 @@ points in time since 1966. Data on administrative units, their capitals,
 and borders has been self-collected, drawing on public sources such as
 statoids.org, FAO’s GAUL database, and the GADM data.
 
-The data is also available for download from this Dropbox:
+**The data is also available for download from this Dropbox:**
 <https://www.dropbox.com/sh/xsxhow5aslr5tnv/AADeSxh_9NC8cvlw-zKtXvh9a?dl=0>
 
 See README.Rmd for details on how to load the data (in R).
